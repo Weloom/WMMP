@@ -1,0 +1,11 @@
+pool:
+  name: Hosted Windows 2019 with VS2019
+  demands: azureps
+
+steps:
+- task: AzurePowerShell@3
+  inputs:
+    azureSubscription: 'Azure WMMP'
+    ScriptPath: 'logic/WMMPLogicApps/Deploy-AzureResourceGroup.ps1'
+    ScriptArguments: -ResourceGroupName 'WMMP'
+    azurePowerShellVersion: LatestVersion
