@@ -29,7 +29,7 @@
     </None>
     <Content Include="Deploy-AzureResourceGroup.ps1" />
     <Content Include="Resources\LogicApp.json" />
-    <Content Include="LogicApp.parameters.json" />
+    <Content Include="parameters.json" />
   </ItemGroup>
   <Target Name="GetReferenceAssemblyPaths" />
 </Project>

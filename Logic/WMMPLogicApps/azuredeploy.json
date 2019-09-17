@@ -31,7 +31,11 @@
         "mode": "Incremental",
         "templateLink": {
           "uri": "[variables('templateUri1')]"
+        },
+        "propertiesLink": {
+          "uri": "[variables('templateUri1')]"
         }
+
       }
     }
   ]
