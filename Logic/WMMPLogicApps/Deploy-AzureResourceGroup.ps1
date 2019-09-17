@@ -6,7 +6,7 @@ Param(
     [switch] $UploadArtifacts,
     [string] $StorageAccountName,
     [string] $StorageContainerName = $ResourceGroupName.ToLowerInvariant() + '-stageartifacts',
-    [string] $TemplateFile = 'LogicApp.json',
+    [string] $TemplateFile = 'azuredeploy.json',
     [string] $TemplateParametersFile = 'LogicApp.parameters.json',
     [string] $ArtifactStagingDirectory = '.',
     [string] $DSCSourceFolder = 'DSC',

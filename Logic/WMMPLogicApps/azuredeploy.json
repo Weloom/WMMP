@@ -16,18 +16,17 @@
     },
     "artifactsLocation": {
       "type": "string",
-      "defaultValue": "https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/101-VM-Virus-Attack-Prevention",
+      "defaultValue": "https://raw.githubusercontent.com/Weloom/WMMP/master/Logic/WMMPLogicApps"
     }
   },
   "variables": {
-    "templateUri1": "[concat(parameters('artifactsLocation'),'/resources/logicapp.json')]"
+    "templateUri1": "[concat(parameters('artifactsLocation'),'/Resources/LogicApp.json')]"
   },
   "resources": [
     {
-      "type": "Microsoft.Logic/workflows",
-      "apiVersion": "2017-07-01",
+      "apiVersion": "2019-05-01",
       "name": "[parameters('workflows_SaveText_name')]",
-      "location": "northeurope",
+      "type": "Microsoft.Resources/deployments",
       "properties": {
         "mode": "Incremental",
         "templateLink": {
