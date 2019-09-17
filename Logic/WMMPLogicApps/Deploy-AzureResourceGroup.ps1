@@ -1,7 +1,7 @@
 #Requires -Version 3.0
 
 Param(
-    [string] [Parameter(Mandatory=$true)] $ResourceGroupLocation,
+#    [string] [Parameter(Mandatory=$true)] $ResourceGroupLocation,
     [string] $ResourceGroupName = 'WMMP',
     [switch] $UploadArtifacts,
     [string] $StorageAccountName,
@@ -10,6 +10,7 @@ Param(
     [string] $TemplateParametersFile = 'parameters.json',
     [string] $ArtifactStagingDirectory = '.',
     [string] $DSCSourceFolder = 'DSC',
+    [switch] $ValidateOnly
     [switch] $ValidateOnly
 )
 
@@ -62,11 +63,11 @@ if ($UploadArtifacts) {
     $StorageAccount = (Get-AzureRmStorageAccount | Where-Object{$_.StorageAccountName -eq $StorageAccountName})
 
     # Create the storage account if it doesn't already exist
-    if ($StorageAccount -eq $null) {
-        $StorageResourceGroupName = 'ARM_Deploy_Staging'
-        New-AzureRmResourceGroup -Location "$ResourceGroupLocation" -Name $StorageResourceGroupName -Force
-        $StorageAccount = New-AzureRmStorageAccount -StorageAccountName $StorageAccountName -Type 'Standard_LRS' -ResourceGroupName $StorageResourceGroupName -Location "$ResourceGroupLocation"
-    }
+    #if ($StorageAccount -eq $null) {
+    #    $StorageResourceGroupName = 'ARM_Deploy_Staging'
+    #    New-AzureRmResourceGroup -Location "$ResourceGroupLocation" -Name $StorageResourceGroupName -Force
+    #    $StorageAccount = New-AzureRmStorageAccount -StorageAccountName $StorageAccountName -Type 'Standard_LRS' -ResourceGroupName $StorageResourceGroupName -Location "$ResourceGroupLocation"
+    #}
 
     # Generate the value for artifacts location if it is not provided in the parameter file
     if ($OptionalParameters[$ArtifactsLocationName] -eq $null) {
@@ -90,9 +91,9 @@ if ($UploadArtifacts) {
 }
 
 # Create the resource group only when it doesn't already exist
-if ((Get-AzureRmResourceGroup -Name $ResourceGroupName -Location $ResourceGroupLocation -Verbose -ErrorAction SilentlyContinue) -eq $null) {
-    New-AzureRmResourceGroup -Name $ResourceGroupName -Location $ResourceGroupLocation -Verbose -Force -ErrorAction Stop
-}
+#if ((Get-AzureRmResourceGroup -Name $ResourceGroupName -Location $ResourceGroupLocation -Verbose -ErrorAction SilentlyContinue) -eq $null) {
+#    New-AzureRmResourceGroup -Name $ResourceGroupName -Location $ResourceGroupLocation -Verbose -Force -ErrorAction Stop
+#}
 
 if ($ValidateOnly) {
     $ErrorMessages = Format-ValidationOutput (Test-AzureRmResourceGroupDeployment -ResourceGroupName $ResourceGroupName `
