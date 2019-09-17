@@ -24,7 +24,6 @@
         "parametersLink": {
           "uri": "[variables('parametersUri')]"
         }
-
       }
     }
   ]
