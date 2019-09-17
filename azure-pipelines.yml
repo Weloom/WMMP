@@ -7,5 +7,5 @@ steps:
   inputs:
     azureSubscription: 'Azure WMMP'
     ScriptPath: 'logic/WMMPLogicApps/Deploy-AzureResourceGroup.ps1'
-    ScriptArguments: -ResourceGroupName 'WMMP'
+    ScriptArguments: -ResourceGroupName 'WMMP' -ResourceGroupLocation 'northeurope'
     azurePowerShellVersion: LatestVersion
