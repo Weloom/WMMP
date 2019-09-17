@@ -6,6 +6,6 @@ steps:
 - task: AzurePowerShell@3
   inputs:
     azureSubscription: 'Azure WMMP'
-    ScriptPath: 'WMMPLogicApps/Deploy-AzureResourceGroup.ps1'
+    ScriptPath: 'logic/WMMPLogicApps/Deploy-AzureResourceGroup.ps1'
     ScriptArguments: -ResourceGroupName 'WMMP'
     azurePowerShellVersion: LatestVersion
