@@ -1,0 +1,99 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "workflows_SaveText_name": {
+      "defaultValue": "SaveText",
+      "type": "string"
+    },
+    "subscription_code": {
+      "defaultValue": "/subscriptions/a4f8dcd6-87d0-4b57-a907-1b21b0278071/",
+      "type": "string"
+    },
+    "connections_azuretables_externalid": {
+      "defaultValue": "/subscriptions/a4f8dcd6-87d0-4b57-a907-1b21b0278071/resourceGroups/WMMP/providers/Microsoft.Web/connections/azuretables",
+      "type": "string"
+    }
+  },
+  "variables": {},
+  "resources": [
+    {
+      "type": "Microsoft.Logic/workflows",
+      "apiVersion": "2017-07-01",
+      "name": "[parameters('workflows_SaveText_name')]",
+      "location": "northeurope",
+      "properties": {
+        "state": "Enabled",
+        "definition": {
+          "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#",
+          "contentVersion": "1.0.0.0",
+          "parameters": {
+            "$connections": {
+              "defaultValue": {},
+              "type": "Object"
+            }
+          },
+          "triggers": {
+            "manual": {
+              "type": "Request",
+              "kind": "Http",
+              "inputs": {
+                "schema": {}
+              }
+            }
+          },
+          "actions": {
+            "Insert_or_Merge_Entity": {
+              "runAfter": {
+                "Parse_JSON": [
+                  "Succeeded"
+                ]
+              },
+              "type": "ApiConnection",
+              "inputs": {
+                "body": "@body('Parse_JSON')",
+                "host": {
+                  "connection": {
+                    "name": "@parameters('$connections')['azuretables']['connectionId']"
+                  }
+                },
+                "method": "patch",
+                "path": "/Tables/@{encodeURIComponent('Text')}/entities(PartitionKey='@{encodeURIComponent(string('Global'))}',RowKey='@{encodeURIComponent(body('Parse_JSON')?['subject'])}')"
+              }
+            },
+            "Parse_JSON": {
+              "runAfter": {},
+              "type": "ParseJson",
+              "inputs": {
+                "content": "@triggerBody()",
+                "schema": {
+                  "properties": {
+                    "content": {
+                      "type": "string"
+                    },
+                    "subject": {
+                      "type": "string"
+                    }
+                  },
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "outputs": {}
+        },
+        "parameters": {
+          "$connections": {
+            "value": {
+              "azuretables": {
+                "connectionId": "[parameters('connections_azuretables_externalid')]",
+                "connectionName": "azuretables",
+                "id": "[concat(parameters('subscription_code'), 'providers/Microsoft.Web/locations/northeurope/managedApis/azuretables')]"
+              }
+            }
+          }
+        }
+      }
+    }
+  ]
+}
