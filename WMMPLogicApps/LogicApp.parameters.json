@@ -1,0 +1,19 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "workflows_SaveText_name": {
+      "value": "SaveTextB2"
+    },
+    "subscription_code": {
+      "value": "/subscriptions/a4f8dcd6-87d0-4b57-a907-1b21b0278071/"
+    },
+    "connections_azuretables_externalid": {
+      "value": "/subscriptions/a4f8dcd6-87d0-4b57-a907-1b21b0278071/resourceGroups/WMMP/providers/Microsoft.Web/connections/azuretables"
+    },
+    "artifactsLocation": {
+      "value": "https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/101-VM-Virus-Attack-Prevention",
+    }
+  }
+}
+
