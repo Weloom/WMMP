@@ -11,7 +11,6 @@ Param(
     [string] $ArtifactStagingDirectory = '.',
     [string] $DSCSourceFolder = 'DSC',
     [switch] $ValidateOnly
-    [switch] $ValidateOnly
 )
 
 try {
