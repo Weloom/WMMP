@@ -2,38 +2,27 @@
   "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
   "contentVersion": "1.0.0.0",
   "parameters": {
-    "workflows_SaveText_name": {
-      "defaultValue": "SaveText",
-      "type": "string"
-    },
-    "subscription_code": {
-      "defaultValue": "/subscriptions/a4f8dcd6-87d0-4b57-a907-1b21b0278071/",
-      "type": "string"
-    },
-    "connections_azuretables_externalid": {
-      "defaultValue": "/subscriptions/a4f8dcd6-87d0-4b57-a907-1b21b0278071/resourceGroups/WMMP/providers/Microsoft.Web/connections/azuretables",
-      "type": "string"
-    },
     "artifactsLocation": {
       "type": "string",
       "defaultValue": "https://raw.githubusercontent.com/Weloom/WMMP/master/Logic/WMMPLogicApps"
     }
   },
   "variables": {
-    "templateUri1": "[concat(parameters('artifactsLocation'),'/Resources/LogicApp.json')]"
+    "templateUri1": "[concat(parameters('artifactsLocation'),'/Resources/LogicApp.json')]",
+    "parametersUri": "[concat(parameters('artifactsLocation'),'/LogicApp.parameters.json')]"
   },
   "resources": [
     {
       "apiVersion": "2019-05-01",
-      "name": "[parameters('workflows_SaveText_name')]",
+      "name": "res1",
       "type": "Microsoft.Resources/deployments",
       "properties": {
         "mode": "Incremental",
         "templateLink": {
           "uri": "[variables('templateUri1')]"
         },
-        "propertiesLink": {
-          "uri": "[variables('templateUri1')]"
+        "parametersLink": {
+          "uri": "[variables('parametersUri')]"
         }
 
       }

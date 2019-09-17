@@ -10,9 +10,6 @@
     },
     "connections_azuretables_externalid": {
       "value": "/subscriptions/a4f8dcd6-87d0-4b57-a907-1b21b0278071/resourceGroups/WMMP/providers/Microsoft.Web/connections/azuretables"
-    },
-    "artifactsLocation": {
-      "value": "https://raw.githubusercontent.com/Weloom/WMMP/master/Logic/WMMPLogicApps"
     }
   }
 }
