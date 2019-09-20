@@ -16,7 +16,7 @@ namespace WWWMPFunctions.test
             var outputSbQueue = new ListCollector<string>();
             TextJobLoaderRun.Run(new ListLogger(), outputSbQueue).GetAwaiter().GetResult();
 
-            Assert.AreEqual(1000, outputSbQueue.Items.Count);
+            Assert.AreEqual(1, outputSbQueue.Items.Count);
         }
     }
 }

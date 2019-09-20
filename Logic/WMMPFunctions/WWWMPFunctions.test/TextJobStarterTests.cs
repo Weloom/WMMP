@@ -12,7 +12,7 @@ namespace WWWMPFunctions.test
     [TestClass]
     public class TextJobStarterTests
     {
-        [TestMethod]
+        [TestMethod, Ignore]
         public void Run_SpecifiesJobType1_Success()
         {
             var job = new TextJob
