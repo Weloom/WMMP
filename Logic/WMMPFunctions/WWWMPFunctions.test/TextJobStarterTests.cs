@@ -28,7 +28,8 @@ namespace WWWMPFunctions.test
             str.Position = 0;
             var msg = new StreamReader(str).ReadToEnd();
 
-            TextJobStarter.Run(msg, new ListLogger());
+            //TODO: Mock CloudTable
+            //TextJobStarter.Run(msg, new ListLogger());
 
             Assert.Inconclusive();
         }
