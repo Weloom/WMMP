@@ -1,7 +1,7 @@
 import { FusePage } from './app.po';
 import { browser, logging } from 'protractor';
 
-describe('Fuse App', () => {
+describe('WMMPClient App', () => {
     let page: FusePage;
 
     beforeEach(() => {
@@ -10,7 +10,7 @@ describe('Fuse App', () => {
 
     it('should display welcome message', () => {
         page.navigateTo();
-        expect(page.getParagraphText()).toEqual('Welcome to Fuse!');
+        expect(page.getParagraphText()).toEqual('Welcome to Mind My Pen!');
     });
 
     afterEach(async () => {
