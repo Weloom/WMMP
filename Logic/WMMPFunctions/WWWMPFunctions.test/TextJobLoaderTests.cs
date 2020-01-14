@@ -14,7 +14,7 @@ namespace WWWMPFunctions.test
         public void Run_SpecifiesUserAndGroup_Success()
         {
             var outputSbQueue = new ListCollector<string>();
-            TextJobLoaderRun.Run(new ListLogger(), outputSbQueue).GetAwaiter().GetResult();
+            //TextJobLoaderRun.Run(new ListLogger(), outputSbQueue).GetAwaiter().GetResult();
 
             Assert.AreEqual(1, outputSbQueue.Items.Count);
         }

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Runtime.Serialization;
 using System.Text;
 
-namespace WMMPFunctions
+namespace WMMPFunctions.Entity
 {
     public enum TextJobType
     {

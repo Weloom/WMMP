@@ -5,7 +5,7 @@ using System.IO;
 using System.Runtime.Serialization.Json;
 using System.Threading;
 using System.Threading.Tasks;
-using WMMPFunctions;
+using WMMPFunctions.Entity;
 
 namespace WWWMPFunctions.test
 {
@@ -15,7 +15,7 @@ namespace WWWMPFunctions.test
         [TestMethod, Ignore]
         public void Run_SpecifiesJobType1_Success()
         {
-            var job = new TextJob
+            var job = new WMMPFunctions.Entity.TextJob
             {
                 TextId = "test",
                 TextJobType = TextJobType.WordCount

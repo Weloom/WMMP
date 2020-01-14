@@ -1,0 +1,170 @@
+{
+     "swagger": "2.0",
+     "info": {
+         "title": "DataUpdate",
+         "version": "1.0",
+         "description": "Import from \"WMMPNETCoreFunctions\" Function App"
+     },
+     "host": "wmmp.azure-api.net",
+     "basePath": "/DataUpdate",
+     "schemes": [
+         "https"
+     ],
+     "securityDefinitions": {
+         "apiKeyHeader": {
+             "type": "apiKey",
+             "name": "Ocp-Apim-Subscription-Key",
+             "in": "header"
+         },
+         "apiKeyQuery": {
+             "type": "apiKey",
+             "name": "subscription-key",
+             "in": "query"
+         }
+     },
+     "security": [
+         {
+             "apiKeyHeader": []
+         },
+         {
+             "apiKeyQuery": []
+         }
+     ],
+     "paths": {
+         "/DeleteWork": {
+             "post": {
+                 "description": "DeleteWork",
+                 "operationId": "post-deletework",
+                 "summary": "DeleteWork",
+                 "responses": {
+                     "200": {
+                         "description": "Returns OK if there are no issues and debug is turned on"
+                     },
+                     "204": {
+                         "description": "If there are not issues and debug is turned off"
+                     }
+                 }
+             }
+         },
+         "/SaveSection": {
+             "post": {
+                 "description": "SaveSection",
+                 "operationId": "post-savesection",
+                 "summary": "SaveSection",
+                 "responses": {
+                     "200": {
+                         "description": "Returns OK if there are no issues and debug is turned on"
+                     },
+                     "204": {
+                         "description": "If there are not issues and debug is turned off"
+                     }
+                 }
+             }
+         },
+         "/SaveAccount": {
+             "post": {
+                 "description": "Saves an account, no matter if it already exists or not.\nThe payload should also include the user",
+                 "operationId": "post-saveaccount",
+                 "summary": "SaveAccount",
+                 "parameters": [
+                     {
+                         "name": "account",
+                         "in": "body",
+                         "schema": {},
+                         "description": "Pet to add to the store"
+                     }
+                 ],
+                 "consumes": [
+                     "application/json"
+                 ],
+                 "responses": {
+                     "200": {
+                         "description": "Returns OK if there are no issues and debug is turned on"
+                     },
+                     "204": {
+                         "description": "If there are not issues and debug is turned off"
+                     }
+                 }
+             }
+         },
+         "/SaveEntry": {
+             "post": {
+                 "description": "SaveEntry",
+                 "operationId": "post-saveentry",
+                 "summary": "SaveEntry",
+                 "responses": {
+                     "200": {
+                         "description": "Returns OK if there are no issues and debug is turned on"
+                     },
+                     "204": {
+                         "description": "If there are not issues and debug is turned off"
+                     }
+                 }
+             }
+         },
+         "/SaveWork": {
+             "post": {
+                 "description": "SaveWork",
+                 "operationId": "post-savework",
+                 "summary": "SaveWork",
+                 "responses": {
+                     "200": {
+                         "description": "Returns OK if there are no issues and debug is turned on"
+                     },
+                     "204": {
+                         "description": "If there are not issues and debug is turned off"
+                     }
+                 }
+             }
+         },
+         "/DeleteSection": {
+             "post": {
+                 "description": "DeleteSection",
+                 "operationId": "post-deletesection",
+                 "summary": "DeleteSection",
+                 "responses": {
+                     "200": {
+                         "description": "Returns OK if there are no issues and debug is turned on"
+                     },
+                     "204": {
+                         "description": "If there are not issues and debug is turned off"
+                     }
+                 }
+             }
+         },
+         "/DeleteAccount": {
+             "post": {
+                 "description": "DeleteAccount",
+                 "operationId": "post-deleteaccount",
+                 "summary": "DeleteAccount",
+                 "responses": {
+                     "200": {
+                         "description": "Returns OK if there are no issues and debug is turned on"
+                     },
+                     "204": {
+                         "description": "If there are not issues and debug is turned off"
+                     }
+                 }
+             }
+         },
+         "/DeleteEntry": {
+             "post": {
+                 "description": "DeleteEntry",
+                 "operationId": "post-deleteentry",
+                 "summary": "DeleteEntry",
+                 "responses": {
+                     "200": {
+                         "description": "Returns OK if there are no issues and debug is turned on"
+                     },
+                     "204": {
+                         "description": "If there are not issues and debug is turned off"
+                     }
+                 }
+             }
+         }
+     },
+     "tags": [],
+     "x-ms-export-notes": [
+         "The exported API contains schemas that aren't of content type 'application/vnd.ms-azure-apim.swagger.definitions+json', and are hence not exported as Swagger definitions."
+     ]
+ }

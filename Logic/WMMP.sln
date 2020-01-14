@@ -5,6 +5,10 @@ VisualStudioVersion = 16.0.29209.62
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{151D2E53-A2C4-4D7D-83FE-D05416EBD58E}") = "WMMPLogicApps", "WMMPLogicApps\WMMPLogicApps.deployproj", "{F5312280-9EBB-4817-B976-AF08E2819558}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WMMPFunctions", "WMMPFunctions\WMMPFunctions\WMMPFunctions.csproj", "{8FB0F294-4423-44F3-A9FD-5EFE6938CC4D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WWWMPFunctions.test", "WMMPFunctions\WWWMPFunctions.test\WWWMPFunctions.test.csproj", "{1736C707-D7DA-4478-90E4-63A2359594D1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{F5312280-9EBB-4817-B976-AF08E2819558}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F5312280-9EBB-4817-B976-AF08E2819558}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F5312280-9EBB-4817-B976-AF08E2819558}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8FB0F294-4423-44F3-A9FD-5EFE6938CC4D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8FB0F294-4423-44F3-A9FD-5EFE6938CC4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8FB0F294-4423-44F3-A9FD-5EFE6938CC4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8FB0F294-4423-44F3-A9FD-5EFE6938CC4D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1736C707-D7DA-4478-90E4-63A2359594D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1736C707-D7DA-4478-90E4-63A2359594D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1736C707-D7DA-4478-90E4-63A2359594D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1736C707-D7DA-4478-90E4-63A2359594D1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

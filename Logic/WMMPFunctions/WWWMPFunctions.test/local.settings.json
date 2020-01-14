@@ -1,0 +1,11 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "UseDevelopmentStorage=true",
+    "FUNCTIONS_WORKER_RUNTIME": "dotnet",
+    "ServiceBusConnection": "Endpoint=sb://textjobs.servicebus.windows.net/;SharedAccessKeyName=AllowAll;SharedAccessKey=tnF47wR2RG/zluBi1zF/+Z722jXcIilX1P6W+MlmOuM=",
+    "Storage": "DefaultEndpointsProtocol=https;AccountName=wmmpbackendstorage;AccountKey=LvkoWhU146Sxl7BMy7OdKG7NXLqNXZtt+tF1uUtSbCOZnVqq5sE35An03MksEjuhW6mEeWt8LkTek9nlnp0ZIw==;EndpointSuffix=core.windows.net",
+    "validateInputSchema": "true",
+    "SaveEntry-InputSchema": "{\"$schema\":\"http://json-schema.org/draft-04/schema#\",\"type\":\"object\",\"properties\":{\"AccountId\":{\"type\":\"string\"},\"WorkId\":{\"type\":\"string\"},\"Action\":{\"type\":\"string\",\"enum\":[\"add\",\"update\"]},\"Entries\":{\"type\":\"array\",\"items\":[{\"type\":\"object\",\"properties\":{\"Id\":{\"type\":\"string\"},\"Subject\":{\"type\":\"string\"},\"OrderNo\":{\"type\":\"integer\"},\"Extract\":{\"type\":\"string\"},\"Link\":{\"type\":\"string\"},\"Entry\":{\"type\":\"string\"}},\"required\":[\"Id\",\"Subject\",\"Entry\"]}]}},\"required\":[\"AccountId\",\"WorkId\",\"Action\",\"Entries\"]}"
+  }
+}

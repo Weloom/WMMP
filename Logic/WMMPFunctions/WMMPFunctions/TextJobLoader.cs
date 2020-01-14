@@ -9,6 +9,7 @@ using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
 using Microsoft.Azure.WebJobs.ServiceBus;
 using System.Runtime.Serialization.Json;
+using WMMPFunctions.Entity;
 
 namespace WMMPFunctions
 {
@@ -16,15 +17,18 @@ namespace WMMPFunctions
     {
         [FunctionName("TextJobLoader")]
         public static async Task<IActionResult> Run(
-        [HttpTrigger(AuthorizationLevel.Anonymous, "get", "post", Route = null)] HttpRequest req,
+        [HttpTrigger(AuthorizationLevel.Anonymous, "post", Route = null)] HttpRequest req,
         ILogger log,
         [ServiceBus("textjobs", Connection = "ServiceBusConnection", EntityType = EntityType.Queue)] ICollector<string> outputSbQueue)
         {
-            return await TextJobLoaderRun.Run(log, outputSbQueue);
+            return await Core.TextJobLoader.Run(log, outputSbQueue);
         }
     }
+}
 
-    public static class TextJobLoaderRun
+namespace WMMPFunctions.Core
+{
+    public static class TextJobLoader
     {
         public static async Task<IActionResult> Run(ILogger log, ICollector<string> outputSbQueue)
         {

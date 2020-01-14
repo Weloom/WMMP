@@ -1,0 +1,27 @@
+{
+     "version": "0.2.0",
+     "configurations": [
+          {
+               "type": "chrome",
+               "request": "launch",
+               "name": "Launch Chrome against localhost",
+               "url": "http://localhost:4100",
+               "webRoot": "${workspaceFolder}"
+          },
+          {
+               "type": "firefox",
+               "request": "launch",
+               "reAttach": true,
+               "name": "Launch localhost",
+               "url": "http://localhost:4100",
+               "webRoot": "${workspaceFolder}"
+          },
+          {
+               "type": "edge",
+               "request": "launch",
+               "name": "Launch Edge (Frontend App)",
+               "url": "http://localhost:4100",
+               "webRoot": "${workspaceFolder}"
+          }
+     ]
+}

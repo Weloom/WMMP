@@ -1,0 +1,143 @@
+{
+  "Works": [
+    {
+      "Id": "1",
+      "Title": "Novel template",
+      "Type": "work",
+      "Language": "Danish",
+      "Sectionlevels": [
+        {
+          "Id": 1,
+          "Title": "Work",
+          "Description": "...",
+          "Color": "AA1111",
+          "Level": 1
+        },
+        {
+          "Id": 2,
+          "Title": "Phase",
+          "Description": "...",
+          "Color": "11AA11",
+          "Level": 2
+        },
+        {
+          "Id": 3,
+          "Title": "Act",
+          "Description": "...",
+          "Color": "1111AA",
+          "Breakentry": 1,
+          "Level": 3
+        },
+        {
+          "Id": 4,
+          "Title": "Chapter",
+          "Description": "...",
+          "Color": "AAAA11",
+          "Breakentry": 1,
+          "Level": 4
+        },
+        {
+          "Id": 6,
+          "Title": "Scene",
+          "Description": "...",
+          "color": "66FF11",
+          "Level": 5
+        },
+        {
+          "Id": 5,
+          "Title": "Beat",
+          "Description": "...",
+          "Color": "AA11AA",
+          "Level": 6
+        }
+      ],
+      "Aspects": [
+        {
+          "Id": "1zp",
+          "Title": "ppp-xxxxxxx",
+          "Description": "..."                 
+        },
+        {
+          "Id": "2zp",
+          "Title": "ppp-ttttttt",
+          "Description": "..."                 
+        },
+        {
+          "Id": "3zp",  
+          "Title": "ppp-yyyyyyy",
+          "Description": "..."                 
+        },
+
+        {
+          "Id": 1,
+          "Title": "Personer",
+          "Description": "...",
+          "Value": "",
+          "Color": "5511FF",
+          "Symbol": "...",
+          "IsEnabled": 1,
+          "IsSearchable": 1,
+          "Searchstring": "",
+          "IsGroup": 1,
+          "IsChildrenOrdered": 0,
+          "OrderNo": 1,
+          "Aspects": [
+            {
+              "Id": 2,
+              "Title": "Hovedperson: Anna",
+              "Description": "...",
+              "Value": "Anna",
+              "Color": "5511FF",
+              "Searchstring": "",
+              "Aspects":[
+                {
+                  "Id": "1z",
+                  "Title": "xxxxxxx",
+                  "Description": "..."                 
+                },
+                {
+                  "Id": "2z",
+                  "Title": "ttttttt",
+                  "Description": "..."                 
+                },
+                {
+                  "Id": "3z",
+                  "Title": "yyyyyyy",
+                  "Description": "..."                 
+                }
+              ],
+              "Relations": [
+                {
+                  "FromId": 5,
+                  "ToId": 5,
+                  "Title": "Nordvest",
+                  "Description": "..."
+                }
+              ]
+            },
+            {
+              "Id": 3,
+              "Title": "Hovedpersons mand: Alfred",
+              "Description": "...",
+              "Value": "Alfred",
+              "Color": "55FFFF",
+              "Searchstring": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Id": "2",
+      "Title": "Novel 2",
+      "Type": "work",
+      "Language": "Danish"
+    },
+    {
+      "Id": "3",
+      "Title": "Novel 3",
+      "Type": "work",
+      "Language": "Danish"
+    }
+  ]
+}

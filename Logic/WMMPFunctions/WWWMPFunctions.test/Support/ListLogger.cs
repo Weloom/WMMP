@@ -1,5 +1,4 @@
 ﻿using Microsoft.Extensions.Logging;
-using Microsoft.Extensions.Logging.Abstractions.Internal;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -10,7 +9,10 @@ namespace WWWMPFunctions.test
     {
         public IList<string> Logs;
 
-        public IDisposable BeginScope<TState>(TState state) => NullScope.Instance;
+        public IDisposable BeginScope<TState>(TState state)
+        {
+            return null;// NullScope.Instance;
+        }
 
         public bool IsEnabled(LogLevel logLevel) => false;
 

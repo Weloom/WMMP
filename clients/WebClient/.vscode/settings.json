@@ -1,0 +1,43 @@
+{
+     "files.exclude": {
+          "**/.git": true,
+          "**/.svn": true,
+          "**/.hg": true,
+          "**/CVS": true,
+          "**/.DS_Store": true,
+          "**/src/app/**/*.less": false,
+          "**/src/app/**/*.spec.ts": true,
+          "**/src/app/**/*.js.map": true,
+          "**/src/app/**/*.js": true,
+          "**/node_modules": true,
+          "**/src/assets": true,
+          "**/src/environments": true,
+          "**/e2e": true,
+          "**/dist": true,
+          "*.*": false,
+          "**/src/*.*": false
+     },
+     "angularKarmaTestExplorer.defaultAngularProjectName": "WMMPC",
+     "testExplorer.addToEditorContextMenu": true,
+     "angularKarmaTestExplorer.defaultSocketConnectionPort": 9999,
+     "angularKarmaTestExplorer.karmaConfFilePath": ".",
+     "angularKarmaTestExplorer.projectType": "AngularCLI",
+     "angularKarmaTestExplorer.debugMode": true,
+     "workbench.colorCustomizations": {
+          "activityBar.background": "#007702",
+          "activityBar.activeBorder": "#0300bf",
+          "activityBar.foreground": "#e7e7e7",
+          "activityBar.inactiveForeground": "#e7e7e799",
+          "activityBarBadge.background": "#0300bf",
+          "activityBarBadge.foreground": "#e7e7e7",
+          "titleBar.activeBackground": "#004401",
+          "titleBar.inactiveBackground": "#00440199",
+          "titleBar.activeForeground": "#e7e7e7",
+          "titleBar.inactiveForeground": "#e7e7e799",
+          "statusBar.background": "#004401",
+          "statusBarItem.hoverBackground": "#007702",
+          "statusBar.foreground": "#e7e7e7"
+     },
+     "peacock.color": "#004401",
+     "explorerExclude.backup": null
+}

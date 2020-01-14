@@ -1,0 +1,43 @@
+ /*   worksService.GetWorks().subscribe((data: Array<any>) => {
+         this.xxx = data;
+       });
+       */
+
+//SUBSCRIBE TO OBSERVERBLE
+   /* this.xxxO.subscribe((data: any[]) => {
+       this.xxx = data;
+    });*/
+
+
+
+//    UPDATES A NUMBER ON SCREEN CONTINUESLY
+
+    /*
+    this.numO = Observable.create(observer => {
+      let value = 0;
+      const interval = setInterval(() => {
+        observer.next(value);
+        value++;
+      }, 1000);
+
+      return () => clearInterval(interval);
+    });*/
+
+/*
+  async GetWorksPromise(): Promise<IWork[]> {
+    return await this.httpClient.get<IWork[]>(this.REST_API_SERVER + '/WMMP/Works').toPromise();
+  }
+
+  async GetWorksJson(): Promise<object> {
+    return await this.httpClient.get(this.REST_API_SERVER + '/WMMP/Works').toPromise();
+  }
+*/
+
+
+/*
+         // this.form.form.setValue({ name: "xxxxxx", email: "md@weloom.dk", gender: "Male", term: true });
+*/
+
+/*
+[style.display]="(worksService.editWork != null) ? 'none' : 'block'"
+*/
