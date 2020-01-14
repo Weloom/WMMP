@@ -1,0 +1,22 @@
+{
+  "Id":1,
+  "Subject":"...",
+  "Extract":"Ellen er sent på den. Hun haster igennem den lyse atriumgård på Ny Odenses IT universitet."
+}
+{
+  "Id":2,
+  "Subject":"...",
+  "Extract":"Hele vejen rundt om plejehjemmet er der anlagt en stor have som igen er omkranset af høje popler, hvis toppe svajer roligt i vinden."
+  
+}
+{
+  "Id":3,
+  "Subject":"...",
+  "Extract":"Det bliver en god dag. Man er ulasteligt klædt og der er ikke en plet at se. Robert står ved bordet med champagneglas, og i hænderne holder han en Krug Clos d'Ambonnay, klar til at slippe proppen, når gæsterne kommer ud i pausen. Da gæsterne træder ud, fyldes rummet med røg."
+  
+}
+{
+  "Id":4,
+  "Subject":"...",
+  "Extract":"I Robert tændes der et direktiv, hans eget. Han forlader sin plads foran terrassedørene"
+}

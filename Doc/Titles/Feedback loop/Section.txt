@@ -1,0 +1,112 @@
+{
+  "Sections": [
+    {
+      "Id": 1,
+      "SectionLevel": 4,
+      "StartPos": 0,
+      "Length": 0,
+      "Entry": 1,
+      "Position": 1,
+      "AspectOccurrence": [
+        {
+          "Aspect": 8,
+          "Phase": 1
+        },
+        {
+          "Aspect": 1
+        },
+        {
+          "Aspect": 2
+        }
+      ],
+      "ChildSections": [
+        {
+          "Id": 2,
+          "SectionLevel": 5,
+          "StartPos": 0,
+          "Length": 100,
+          "Entry": 1,
+          "Position": 1,
+          "ChildSections": [
+            {
+              "Id": 3,
+              "SectionLevel": 6,
+              "StartPos": 0,
+              "Length": 20,
+              "Entry": 1,
+              "Position": 1
+            },
+            {
+              "Id": 4,
+              "SectionLevel": 6,
+              "StartPos": 0,
+              "Length": 30,
+              "Entry": 1,
+              "Position": 2
+            }
+          ]
+        },
+        {
+          "Id": 5,
+          "SectionLevel": 5,
+          "StartPos": 0,
+          "Length": 200,
+          "Entry": 1,
+          "Position": 2
+        },
+        {
+          "Id": 6,
+          "SectionLevel": 5,
+          "StartPos": 0,
+          "Length": 300,
+          "Entry": 1,
+          "Position": 3
+        },
+        {
+          "Id": 7,
+          "SectionLevel": 5,
+          "StartPos": 0,
+          "Length": 0,
+          "Entry": 1,
+          "Position": 4
+        }
+      ]
+    },
+    {
+      "Id": 8,
+      "SectionLevel": 4,
+      "StartPos": 0,
+      "Length": 0,
+      "Entry": 2,
+      "Position": 2,
+      "AspectOccurrence": [
+        {
+          "Aspect": 8,
+          "Phase": 2
+        }
+      ]
+    },
+    {
+      "Id": 9,
+      "SectionLevel": 4,
+      "StartPos": 0,
+      "Length": 0,
+      "Entry": 3,
+      "Position": 3
+    },
+    {
+      "Id": 10,
+      "SectionLevel": 4,
+      "StartPos": 0,
+      "Length": 0,
+      "Entry": 4,
+      "Position": 4,
+      "AspectOccurrence": [
+        {
+          "Aspect": 8,
+          "Phase": 3
+        }
+      ]
+    }
+  ]
+}

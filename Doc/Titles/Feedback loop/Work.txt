@@ -1,0 +1,195 @@
+{
+  "Title": "Novel template",
+  "Type": "work",
+  "Language": "Danish",
+  "Sectionlevels": [
+    {
+      "Id": 2,
+      "Title": "Phase",
+      "Description": "...",
+      "Color": "11AA11",
+      "IsDisabled": 0,
+      "Level": 1
+    },
+    {
+      "Id": 3,
+      "Title": "Act",
+      "Description": "...",
+      "Color": "1111AA",
+      "Breakentry": 1,
+      "IsDisabled": 0,
+      "Level": 2
+    },
+    {
+      "Id": 4,
+      "Title": "Chapter",
+      "Description": "...",
+      "Color": "AAAA11",
+      "Breakentry": 1,
+      "IsDisabled": 0,
+      "Level": 3
+    },
+    {
+      "Id": 6,
+      "Title": "Scene",
+      "Description": "...",
+      "color": "66FF11",
+      "IsDisabled": 0,
+      "Level": 4
+    },
+    {
+      "Id": 5,
+      "Title": "Beat",
+      "Description": "...",
+      "Color": "AA11AA",
+      "IsDisabled": 0,
+      "Level": 5
+    }
+  ],
+  "Aspects": [
+    {
+      "Id": 1,
+      "Title": "Personer",
+      "Description": "...",
+      "Value": "",
+      "Color": "5511FF",
+      "Symbol": "...",
+      "IsDisabled": 0,
+      "IsSearchable": 1,
+      "Searchstring": "",
+      "IsGroup": 1,
+      "IsChildrenOrdered": 0,
+      "OrderNo": 1,
+      "Aspects": [
+        {
+          "Id": 2,
+          "Title": "Hovedperson: Anna",
+          "Description": "...",
+          "Value": "Anna",
+          "Color": "5511FF",
+          "Searchstring": "",
+          "Relations": [
+            {
+              "FromId": 5,
+              "ToId": 5,
+              "Title": "Nordvest",
+              "Description": "..."
+            }
+          ]
+        },
+        {
+          "Id": 3,
+          "Title": "Hovedpersons mand: Alfred",
+          "Description": "...",
+          "Value": "Alfred",
+          "Color": "55FFFF",
+          "Searchstring": ""
+        }
+      ]
+    },
+    {
+      "Id": 4,
+      "Title": "Steder",
+      "Description": "...",
+      "Value": "",
+      "Color": "552244",
+      "Symbol": "...",
+      "IsDisabled": 0,
+      "IsSearchable": 1,
+      "Searchstring": "",
+      "IsGroup": 1,
+      "IsChildrenOrdered": 0,
+      "OrderNo": 2,
+      "Aspects": [
+        {
+          "Id": 5,
+          "Title": "Nordvest",
+          "Description": "...",
+          "Value": "Anna",
+          "Color": "5511FF",
+          "Searchstring": ""
+        },
+        {
+          "Id": 6,
+          "Title": "Annas arbejdsplads",
+          "Description": "...",
+          "Value": "Alfred",
+          "Color": "55FFFF",
+          "Searchstring": ""
+        }
+      ]
+    },
+    {
+      "Id": 7,
+      "Title": "Hemmeligheder",
+      "Description": "...",
+      "Value": "",
+      "Color": "FF00FF",
+      "Symbol": "...",
+      "IsDisabled": 0,
+      "IsSearchable": 0,
+      "IsGroup": 1,
+      "IsChildrenOrdered": 1,
+      "OrderNo": 3,
+      "Aspects": [
+        {
+          "Id": 8,
+          "Title": "Hemmelighed 1",
+          "Description": "...",
+          "Value": "Hemmelighed 1",
+          "Color": "772277",
+          "OrderNo": 1,
+          "Phases": [
+            {
+              "Id": 1,
+              "Title": "Hint",
+              "Description": "...",
+              "OrderNo": 1
+            },
+            {
+              "Id": 2,
+              "Title": "Berøring",
+              "Description": "...",
+              "OrderNo": 2
+            },
+            {
+              "Id": 3,
+              "Title": "Udfoldelse",
+              "Description": "...",
+              "OrderNo": 3
+            }
+          ]
+        },
+        {
+          "Id": 9,
+          "Title": "Hemmelighed 2",
+          "Description": "...",
+          "Value": "Hemmelighed 2",
+          "Color": "55FFFF",
+          "Searchstring": "",
+          "OrderNo": 2,
+          "Phases": [
+            {
+              "Id": 4,
+              "Title": "Hint",
+              "Description": "...",
+              "OrderNo": 1
+            },
+            {
+              "Id": 5,
+              "Title": "Berøring",
+              "Description": "...",
+              "OrderNo": 2
+            },
+            {
+              "Id": 6,
+              "Title": "Udfoldelse",
+              "Description": "...",
+              "OrderNo": 3
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
