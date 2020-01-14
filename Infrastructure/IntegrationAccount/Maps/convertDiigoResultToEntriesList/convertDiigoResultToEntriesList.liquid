@@ -1,0 +1,12 @@
+[ {%- for x in content -%} {%- for a in x.annotations -%}
+{
+"Subject": "{{x.title}}",
+"Link": "{{x.url}}",
+"Extract":"{{a.content | Escape }}",
+"Entry": "{{a.content | Escape }}"
+}, {%- endfor -%}{%- endfor -%}
+]
+
+
+
+

@@ -1,0 +1,55 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "AccountId": {
+      "type": "string"
+    },
+    "WorkId": {
+      "type": "string"
+    },
+    "Action": {
+      "type": "string",
+      "enum": [ "add", "update" ]
+    },
+    "Entries": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "Id": {
+              "type": "string"
+            },
+            "Subject": {
+              "type": "string"
+            },
+            "OrderNo": {
+              "type": "integer"
+            },
+            "Extract": {
+              "type": "string"
+            },
+            "Link": {
+              "type": "string"
+            },
+            "Entry": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "Id",
+            "Subject",
+            "Entry"
+          ]
+        }
+      ]
+    }
+  },
+  "required": [
+    "AccountId",
+    "WorkId",
+    "Action",
+    "Entries"
+  ]
+} 
