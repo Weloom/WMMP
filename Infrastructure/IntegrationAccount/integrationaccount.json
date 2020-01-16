@@ -21,26 +21,6 @@
             "properties": {
                 "state": "Enabled"
             }
-        },
-        {
-            "type": "Microsoft.Logic/integrationAccounts/maps",
-            "apiVersion": "2016-06-01",
-            "name": "[concat(parameters('integrationAccounts_wmmp_ia_name'), '/DiigoToEntries')]",
-            "dependsOn": [
-                "[resourceId('Microsoft.Logic/integrationAccounts', parameters('integrationAccounts_wmmp_ia_name'))]"
-            ],
-            "properties": {
-                "mapType": "Liquid",
-                "contentLink": {
-                    "uri": "https://prod-08.northeurope.logic.azure.com:443/integrationAccounts/0f92fb91d3e0418f8d2281ff101ef538/maps/DiigoToEntries/contents/Value?api-version=2015-08-01-preview&se=2020-01-14T19%3A00%3A02.3124674Z&sp=%2Fmaps%2FDiigoToEntries%2Fread&sv=1.0&sig=nzBMuQ2Aq0zP0RELuSvE2LcJvp9d-6btvy71ZriX3sc",
-                    "contentVersion": "\"0x8D78AE0DB44AD42\"",
-                    "contentSize": 229,
-                    "contentHash": {
-                        "algorithm": "md5",
-                        "value": "I9WDanU8fh7HP0ztQvdW3A=="
-                    }
-                }
-            }
-        }
+        }      
     ]
 }
